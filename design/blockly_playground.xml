@@ -1,0 +1,149 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="r;NO+1ICdqA{kEV:8X#R">item</variable>
+    <variable type="" id="H#0dX,u3n{FIwDB7[rQ^">question_item</variable>
+    <variable type="" id="GF{|V/]+avp]D-6GL9p[">questions</variable>
+    <variable type="" id="{H=QbBscU-)13*sks6yr">counter_outer</variable>
+    <variable type="" id=";k}lla|yTeRPMJpb.ljV">counter_inner</variable>
+    <variable type="" id="l9eQK0jd7JPlgk{f/CvF">i</variable>
+    <variable type="" id="-=}900n^s]lNG!Oyj=VS">input_id_temp</variable>
+  </variables>
+  <block type="dom_write_ul" id="ReYVin%,ZBvEvB)Sl%YQ" x="13" y="13">
+    <statement name="lists">
+      <block type="controls_forEach" id="jTcakho^M58#R5PVUXD6">
+        <field name="VAR" id="H#0dX,u3n{FIwDB7[rQ^" variabletype="">question_item</field>
+        <value name="LIST">
+          <block type="variables_get" id="qNsA4l`!G9D=$3D.+E91">
+            <field name="VAR" id="GF{|V/]+avp]D-6GL9p[" variabletype="">questions</field>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="variables_set" id="?2l$va!;3F4twzpB{ugd">
+            <field name="VAR" id="{H=QbBscU-)13*sks6yr" variabletype="">counter_outer</field>
+            <value name="VALUE">
+              <block type="math_number" id="D$@:9PrYCa9fB4w3w0/9">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+            <next>
+              <block type="dom_write_list_item" id="{/XW-^L].#nP3mb7JEj2">
+                <statement name="list_item_content">
+                  <block type="dom_write_div" id="_aQyoDLwuzpSUPM58QZ-">
+                    <statement name="div_content">
+                      <block type="dom_write" id="/}2i4-L/kMk;K[[)~N:,">
+                        <value name="content">
+                          <block type="json_attribute" id="mKaj4GbU*QK3cLjvj~Jz">
+                            <value name="object_name">
+                              <block type="variables_get" id="O[5!X/.ZY;):ZIsJPju,">
+                                <field name="VAR" id="H#0dX,u3n{FIwDB7[rQ^" variabletype="">question_item</field>
+                              </block>
+                            </value>
+                            <value name="object_attribute">
+                              <block type="text" id="6%FZq~7-`nEb3c#/P_0j">
+                                <field name="TEXT">description</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                    <next>
+                      <block type="controls_for" id="|UDW(1Ku8=3U*_A3KLLP">
+                        <field name="VAR" id=";k}lla|yTeRPMJpb.ljV" variabletype="">counter_inner</field>
+                        <value name="FROM">
+                          <shadow type="math_number" id="-*E,2P]M(`akRCZ9QCD]">
+                            <field name="NUM">1</field>
+                          </shadow>
+                        </value>
+                        <value name="TO">
+                          <shadow type="math_number" id="I?8*y]EDeV?h2.]bnDuI">
+                            <field name="NUM">3</field>
+                          </shadow>
+                        </value>
+                        <value name="BY">
+                          <shadow type="math_number" id="?g]lkncnwk{h@P`hcqDr">
+                            <field name="NUM">1</field>
+                          </shadow>
+                        </value>
+                        <statement name="DO">
+                          <block type="variables_set" id="PaG_]XcmSwZUSLbnt,Bb">
+                            <field name="VAR" id="-=}900n^s]lNG!Oyj=VS" variabletype="">input_id_temp</field>
+                            <value name="VALUE">
+                              <block type="text_join" id="}O81dBgDDi2PE05GmJ-z">
+                                <mutation items="2"></mutation>
+                                <value name="ADD0">
+                                  <block type="variables_get" id="P-;u.dykBOHA:O)*e7(n">
+                                    <field name="VAR" id="{H=QbBscU-)13*sks6yr" variabletype="">counter_outer</field>
+                                  </block>
+                                </value>
+                                <value name="ADD1">
+                                  <block type="variables_get" id="TOh(O8]Zw@uWS}=@Nx$;">
+                                    <field name="VAR" id=";k}lla|yTeRPMJpb.ljV" variabletype="">counter_inner</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="dom_write_label" id="24h?;PyLFDH.H:IPrb*6">
+                                <value name="label_text">
+                                  <block type="text_join" id="#XhIOkB}C_g-c)`LjU5p">
+                                    <mutation items="2"></mutation>
+                                    <value name="ADD0">
+                                      <block type="text" id="PGDngwP6W6W^Jq/=v6CL">
+                                        <field name="TEXT">choice_</field>
+                                      </block>
+                                    </value>
+                                    <value name="ADD1">
+                                      <block type="variables_get" id="_B7=iAvkDCY,,S]r3hJ!">
+                                        <field name="VAR" id=";k}lla|yTeRPMJpb.ljV" variabletype="">counter_inner</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="input_id">
+                                  <block type="variables_get" id="%@caVR=`TmTW%{w95M4h">
+                                    <field name="VAR" id="-=}900n^s]lNG!Oyj=VS" variabletype="">input_id_temp</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="dom_write_input" id="9mVRekhN},?X=`:9!)By">
+                                    <field name="input_type">radio</field>
+                                    <field name="input_value" id=";k}lla|yTeRPMJpb.ljV" variabletype="">counter_inner</field>
+                                    <value name="input_id">
+                                      <block type="variables_get" id="YUkcM~})3@:o(W(2Zmn~">
+                                        <field name="VAR" id="-=}900n^s]lNG!Oyj=VS" variabletype="">input_id_temp</field>
+                                      </block>
+                                    </value>
+                                    <value name="input_name">
+                                      <block type="text_join" id="j%sg=O?oxbH`,(4+3LyM">
+                                        <mutation items="2"></mutation>
+                                        <value name="ADD0">
+                                          <block type="text" id="1}||HuosG}ckQ*/Fmw/[">
+                                            <field name="TEXT">question_</field>
+                                          </block>
+                                        </value>
+                                        <value name="ADD1">
+                                          <block type="variables_get" id="bL7p#3d)Ayw--4u=zJ):">
+                                            <field name="VAR" id="{H=QbBscU-)13*sks6yr" variabletype="">counter_outer</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </statement>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+</xml>

@@ -1,0 +1,84 @@
+<xml xmlns="http://www.w3.org/1999/xhtml"><block type="factory_base" id="?gPrjnaketnDqD4UDNkt" deletable="false" movable="false" x="0" y="0">
+    <mutation connections="NONE"></mutation>
+    <field name="NAME">document_write</field>
+    <field name="INLINE">EXT</field>
+    <field name="CONNECTIONS">NONE</field>
+    <statement name="INPUTS">
+      <block type="input_value" id="]p,kI,@U~,z$5cqI6G6G">
+        <field name="INPUTNAME">content</field>
+        <field name="ALIGN">LEFT</field>
+        <value name="TYPE">
+          <shadow type="type_null" id="ifX?,%L!Q)Eaf:]~Z5md"></shadow>
+          <block type="type_string" id="yQOZ56h707!5ePwHn|@G"></block>
+        </value>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id=")9?9et~gPA[;8SHw85f)" deletable="false" movable="false">
+        <field name="TEXT">write something to document</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="ehqH4~suRP[,lm1~~UX7" deletable="false" movable="false">
+        <field name="TEXT">write something to document</field>
+      </block>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id=")T1N)VfoF!/tx`Oihr#5">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="GM5`*${9tqVXokw!xVEF" deletable="false" movable="false" x="0" y="0">
+    <mutation connections="LEFT"></mutation>
+    <field name="NAME">json_attribute</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">LEFT</field>
+    <statement name="INPUTS">
+      <block type="input_value" id="3pP~oyykP4Gs};mu*%QO">
+        <field name="INPUTNAME">object_name</field>
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="`fn=HFo9mQ@Xc~DMke68">
+            <field name="TEXT">object</field>
+          </block>
+        </statement>
+        <value name="TYPE">
+          <shadow type="type_null" id="sT9gf!I9J]1[wFuJ(_.#"></shadow>
+        </value>
+        <next>
+          <block type="input_value" id="QMWx~7DNPi5/lm)(g*+T">
+            <field name="INPUTNAME">object_attribute</field>
+            <field name="ALIGN">RIGHT</field>
+            <statement name="FIELDS">
+              <block type="field_static" id="EpxAdGUVV(XPL@7I7Xiw">
+                <field name="TEXT">'s attribute</field>
+              </block>
+            </statement>
+            <value name="TYPE">
+              <shadow type="type_null" id="Jb%zTSo5c5bJ8+kkMjba"></shadow>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="v$G#HF9pZ7SmFRhDmJ!!" deletable="false" movable="false">
+        <field name="TEXT">Get Object Property</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="/BJ0k4Ce%#IeBHLnA!g/" deletable="false" movable="false">
+        <field name="TEXT">Get Object Property</field>
+      </block>
+    </value>
+    <value name="OUTPUTTYPE">
+      <shadow type="type_null" id="NqLu8zSZ3J_6HH%$..TF"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="i@bJ{_EJ.V}^=S7e@|ds">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
+      </block>
+    </value>
+  </block></xml>
