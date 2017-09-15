@@ -22,3 +22,6 @@ on the save level
    
 Then you can paste ./design/blockly_playground.xml and "import from XML", then generate JS codes.
 After that, copy and paste JS codes to the corresponding position in load_question.js 
+
+## Effect
+![Uhr](/images/Screenshot_1.jpg)
